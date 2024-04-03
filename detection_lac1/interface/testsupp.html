@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sécheresse en IRAK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero" id="hero">
+        <h1 id="mainTitle" class="bigTitle">Sécheresse en IRAK</h1>
+        <button id="startButton" onclick="startAnimation()">Commencer</button>
+    </div>
+
+    <div class="feuille">
+        <img src="feuille.png">
+        <img src="eau.png">
+        <img src="feuille.png">
+        <img src="eau.png">
+        <img src="feuille.png">
+        <img src="eau.png">
+    </div>
+
+    <img src="lac.gif" alt="GIF" class="gif-bottom-left">
+
+    <div class="big-rectangle-right-top" style="display: none">
+        <a href="#" onclick="showMapleData(event)">EAU</a>
+    </div>
+
+    <div class="small-rectangle-below-title" style="display: none">
+            <a href="../marque_de_flotte.xlsx" download="marque_de_flotte.xlsx">Fichier Excel - Essence d'arbres</a>
+            <a href="../Etude_de_la_flotte.xlsx" download="Etude_de_la_flotte.xlsx">Fichier Excel - Étude de déforestation</a>
+        
+    </div>
+
+    <div class="big-rectangle-bottom-right" style="display: none">
+        <button class="fleche-defilement" id="fleche-defilement-prev">
+            &#8249;
+          </button>
+          <button class="fleche-defilement" id="fleche-defilement-next">
+            &#8250;
+          </button>
+          <ul class="diaporama-images" id="diaporama-images">
+            <img src="..\seuillage\2000.png\filled.png">
+            <img src="..\seuillage\01-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\01-2021.jpg\filled.png">
+            <img src="..\seuillage\01-2021.jpg\gray_image.png">
+            <img src="..\seuillage\01-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\01-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\01-2021.jpg\large_canny.png">
+            <img src="..\seuillage\01-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\01-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\01-2022.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\01-2022.jpg\filled.png">
+            <img src="..\seuillage\01-2022.jpg\gray_image.png">
+            <img src="..\seuillage\01-2022.jpg\Green_and_Black.png">
+            <img src="..\seuillage\01-2022.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\01-2022.jpg\large_canny.png">
+            <img src="..\seuillage\01-2022.jpg\medium_canny.png">
+            <img src="..\seuillage\01-2022.jpg\narrow_canny.png">
+            <img src="..\seuillage\02-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\02-2021.jpg\filled.png">
+            <img src="..\seuillage\02-2021.jpg\gray_image.png">
+            <img src="..\seuillage\02-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\02-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\02-2021.jpg\large_canny.png">
+            <img src="..\seuillage\02-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\02-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\02-2022.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\02-2022.jpg\filled.png">
+            <img src="..\seuillage\02-2022.jpg\gray_image.png">
+            <img src="..\seuillage\02-2022.jpg\Green_and_Black.png">
+            <img src="..\seuillage\02-2022.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\02-2022.jpg\large_canny.png">
+            <img src="..\seuillage\02-2022.jpg\medium_canny.png">
+            <img src="..\seuillage\02-2022.jpg\narrow_canny.png">
+            <img src="..\seuillage\03-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\03-2021.jpg\filled.png">
+            <img src="..\seuillage\03-2021.jpg\gray_image.png">
+            <img src="..\seuillage\03-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\03-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\03-2021.jpg\large_canny.png">
+            <img src="..\seuillage\03-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\03-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\03-2022.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\03-2022.jpg\filled.png">
+            <img src="..\seuillage\03-2022.jpg\gray_image.png">
+            <img src="..\seuillage\03-2022.jpg\Green_and_Black.png">
+            <img src="..\seuillage\03-2022.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\03-2022.jpg\large_canny.png">
+            <img src="..\seuillage\03-2022.jpg\medium_canny.png">
+            <img src="..\seuillage\03-2022.jpg\narrow_canny.png">
+            <img src="..\seuillage\04-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\04-2020.jpg\filled.png">
+            <img src="..\seuillage\04-2020.jpg\gray_image.png">
+            <img src="..\seuillage\04-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\04-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\04-2020.jpg\large_canny.png">
+            <img src="..\seuillage\04-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\04-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\04-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\04-2021.jpg\filled.png">
+            <img src="..\seuillage\04-2021.jpg\gray_image.png">
+            <img src="..\seuillage\04-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\04-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\04-2021.jpg\large_canny.png">
+            <img src="..\seuillage\04-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\04-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\04-2022.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\04-2022.jpg\filled.png">
+            <img src="..\seuillage\04-2022.jpg\gray_image.png">
+            <img src="..\seuillage\04-2022.jpg\Green_and_Black.png">
+            <img src="..\seuillage\04-2022.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\04-2022.jpg\large_canny.png">
+            <img src="..\seuillage\04-2022.jpg\medium_canny.png">
+            <img src="..\seuillage\04-2022.jpg\narrow_canny.png">
+            <img src="..\seuillage\05-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\05-2020.jpg\filled.png">
+            <img src="..\seuillage\05-2020.jpg\gray_image.png">
+            <img src="..\seuillage\05-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\05-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\05-2020.jpg\large_canny.png">
+            <img src="..\seuillage\05-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\05-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\05-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\05-2021.jpg\filled.png">
+            <img src="..\seuillage\05-2021.jpg\gray_image.png">
+            <img src="..\seuillage\05-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\05-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\05-2021.jpg\large_canny.png">
+            <img src="..\seuillage\05-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\05-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\06-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\06-2020.jpg\filled.png">
+            <img src="..\seuillage\06-2020.jpg\gray_image.png">
+            <img src="..\seuillage\06-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\06-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\06-2020.jpg\large_canny.png">
+            <img src="..\seuillage\06-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\06-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\06-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\06-2021.jpg\filled.png">
+            <img src="..\seuillage\06-2021.jpg\gray_image.png">
+            <img src="..\seuillage\06-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\06-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\06-2021.jpg\large_canny.png">
+            <img src="..\seuillage\06-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\06-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\07-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\07-2020.jpg\filled.png">
+            <img src="..\seuillage\07-2020.jpg\gray_image.png">
+            <img src="..\seuillage\07-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\07-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\07-2020.jpg\large_canny.png">
+            <img src="..\seuillage\07-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\07-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\07-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\07-2021.jpg\filled.png">
+            <img src="..\seuillage\07-2021.jpg\gray_image.png">
+            <img src="..\seuillage\07-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\07-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\07-2021.jpg\large_canny.png">
+            <img src="..\seuillage\07-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\07-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\08-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\08-2020.jpg\filled.png">
+            <img src="..\seuillage\08-2020.jpg\gray_image.png">
+            <img src="..\seuillage\08-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\08-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\08-2020.jpg\large_canny.png">
+            <img src="..\seuillage\08-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\08-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\08-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\08-2021.jpg\filled.png">
+            <img src="..\seuillage\08-2021.jpg\gray_image.png">
+            <img src="..\seuillage\08-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\08-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\08-2021.jpg\large_canny.png">
+            <img src="..\seuillage\08-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\08-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\09-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\09-2020.jpg\filled.png">
+            <img src="..\seuillage\09-2020.jpg\gray_image.png">
+            <img src="..\seuillage\09-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\09-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\09-2020.jpg\large_canny.png">
+            <img src="..\seuillage\09-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\09-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\09-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\09-2021.jpg\filled.png">
+            <img src="..\seuillage\09-2021.jpg\gray_image.png">
+            <img src="..\seuillage\09-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\09-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\09-2021.jpg\large_canny.png">
+            <img src="..\seuillage\09-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\09-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\10-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\10-2020.jpg\filled.png">
+            <img src="..\seuillage\10-2020.jpg\gray_image.png">
+            <img src="..\seuillage\10-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\10-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\10-2020.jpg\large_canny.png">
+            <img src="..\seuillage\10-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\10-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\10-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\10-2021.jpg\filled.png">
+            <img src="..\seuillage\10-2021.jpg\gray_image.png">
+            <img src="..\seuillage\10-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\10-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\10-2021.jpg\large_canny.png">
+            <img src="..\seuillage\10-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\10-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\11-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\11-2020.jpg\filled.png">
+            <img src="..\seuillage\11-2020.jpg\gray_image.png">
+            <img src="..\seuillage\11-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\11-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\11-2020.jpg\large_canny.png">
+            <img src="..\seuillage\11-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\11-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\11-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\11-2021.jpg\filled.png">
+            <img src="..\seuillage\11-2021.jpg\gray_image.png">
+            <img src="..\seuillage\11-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\11-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\11-2021.jpg\large_canny.png">
+            <img src="..\seuillage\11-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\11-2021.jpg\narrow_canny.png">
+            <img src="..\seuillage\12-2020.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\12-2020.jpg\filled.png">
+            <img src="..\seuillage\12-2020.jpg\gray_image.png">
+            <img src="..\seuillage\12-2020.jpg\Green_and_Black.png">
+            <img src="..\seuillage\12-2020.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\12-2020.jpg\large_canny.png">
+            <img src="..\seuillage\12-2020.jpg\medium_canny.png">
+            <img src="..\seuillage\12-2020.jpg\narrow_canny.png">
+            <img src="..\seuillage\12-2021.jpg\Blue_with_contour.png">
+            <img src="..\seuillage\12-2021.jpg\filled.png">
+            <img src="..\seuillage\12-2021.jpg\gray_image.png">
+            <img src="..\seuillage\12-2021.jpg\Green_and_Black.png">
+            <img src="..\seuillage\12-2021.jpg\Green_with_filled_contour.png">
+            <img src="..\seuillage\12-2021.jpg\large_canny.png">
+            <img src="..\seuillage\12-2021.jpg\medium_canny.png">
+            <img src="..\seuillage\12-2021.jpg\narrow_canny.png">
+          </ul>
+        
+        </div>
+        
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
