@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+actor Utilisateur as user
+rectangle "Application" {
+  usecase "Importer Images" as import
+  usecase "Appliquer Filtres" as filters
+  usecase "Afficher Résultats" as display
+
+  user --> import : Utilise
+  user --> filters : Utilise
+  user --> display : Utilise
+}
+
+@enduml

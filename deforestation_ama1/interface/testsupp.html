@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Déforêstation en AMAZONIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero" id="hero">
+        <h1 id="mainTitle" class="bigTitle">Déforêstation en AMAZONIE</h1>
+        <button id="startButton" onclick="startAnimation()">Commencer</button>
+    </div>
+
+    <div class="feuille">
+        <img src="feuille.png">
+        <img src="feuille.png">
+        <img src="feuille.png">
+        <img src="feuille.png">
+        <img src="feuille.png">
+        <img src="feuille.png">
+    </div>
+
+    <img src="tronce.gif" alt="GIF" class="gif-bottom-left">
+
+    <div class="big-rectangle-right-top" style="display: none">
+        <a href="#" onclick="showMapleData(event)">Arbres</a>
+    </div>
+
+    <div class="small-rectangle-below-title" style="display: none">
+            <a href="../Essence_d'arbres_IP.xlsx" download="Essence_d'arbres_IP.xlsx">Fichier Excel - Essence d'arbres</a>
+            <a href="../Etude_déforestation.xlsx" download="Etude_déforestation.xlsx">Fichier Excel - Étude de déforestation</a>
+        
+    </div>
+
+    <div class="big-rectangle-bottom-right" style="display: none">
+        <button class="fleche-defilement" id="fleche-defilement-prev">
+            &#8249;
+          </button>
+          <button class="fleche-defilement" id="fleche-defilement-next">
+            &#8250;
+          </button>
+          <ul class="diaporama-images" id="diaporama-images">
+            <img src="..\seuillage\2000.png\filled.png">
+            <img src="..\seuillage\2000.png\gray_image.png">
+            <img src="..\seuillage\2000.png\Green_and_Black.png">
+            <img src="..\seuillage\2000.png\large_canny.png">
+            <img src="..\seuillage\2000.png\medium_canny.png">
+            <img src="..\seuillage\2000.png\narrow_canny.png">
+            <img src="..\seuillage\2001.png\filled.png">
+            <img src="..\seuillage\2001.png\gray_image.png">
+            <img src="..\seuillage\2001.png\Green_and_Black.png">
+            <img src="..\seuillage\2001.png\large_canny.png">
+            <img src="..\seuillage\2001.png\medium_canny.png">
+            <img src="..\seuillage\2001.png\narrow_canny.png">
+            <img src="..\seuillage\2002.png\filled.png">
+            <img src="..\seuillage\2002.png\gray_image.png">
+            <img src="..\seuillage\2002.png\Green_and_Black.png">
+            <img src="..\seuillage\2002.png\large_canny.png">
+            <img src="..\seuillage\2002.png\medium_canny.png">
+            <img src="..\seuillage\2002.png\narrow_canny.png">
+            <img src="..\seuillage\2003.png\filled.png">
+            <img src="..\seuillage\2003.png\gray_image.png">
+            <img src="..\seuillage\2003.png\Green_and_Black.png">
+            <img src="..\seuillage\2003.png\large_canny.png">
+            <img src="..\seuillage\2003.png\medium_canny.png">
+            <img src="..\seuillage\2003.png\narrow_canny.png">
+            <img src="..\seuillage\2004.png\filled.png">
+            <img src="..\seuillage\2004.png\gray_image.png">
+            <img src="..\seuillage\2004.png\Green_and_Black.png">
+            <img src="..\seuillage\2004.png\large_canny.png">
+            <img src="..\seuillage\2004.png\medium_canny.png">
+            <img src="..\seuillage\2004.png\narrow_canny.png">
+            <img src="..\seuillage\2005.png\filled.png">
+            <img src="..\seuillage\2005.png\gray_image.png">
+            <img src="..\seuillage\2005.png\Green_and_Black.png">
+            <img src="..\seuillage\2005.png\large_canny.png">
+            <img src="..\seuillage\2005.png\medium_canny.png">
+            <img src="..\seuillage\2005.png\narrow_canny.png">
+            <img src="..\seuillage\2006.png\filled.png">
+            <img src="..\seuillage\2006.png\gray_image.png">
+            <img src="..\seuillage\2006.png\Green_and_Black.png">
+            <img src="..\seuillage\2006.png\large_canny.png">
+            <img src="..\seuillage\2006.png\medium_canny.png">
+            <img src="..\seuillage\2006.png\narrow_canny.png">
+            <img src="..\seuillage\2007.png\filled - Copie.png">
+            <img src="..\seuillage\2007.png\filled.png">
+            <img src="..\seuillage\2007.png\gray_image.png">
+            <img src="..\seuillage\2007.png\Green_and_Black.png">
+            <img src="..\seuillage\2007.png\large_canny.png">
+            <img src="..\seuillage\2007.png\medium_canny.png">
+            <img src="..\seuillage\2007.png\narrow_canny.png">
+            <img src="..\seuillage\2008.png\filled.png">
+            <img src="..\seuillage\2008.png\gray_image.png">
+            <img src="..\seuillage\2008.png\Green_and_Black.png">
+            <img src="..\seuillage\2008.png\large_canny.png">
+            <img src="..\seuillage\2008.png\medium_canny.png">
+            <img src="..\seuillage\2008.png\narrow_canny.png">
+            <img src="..\seuillage\2009.png\filled.png">
+            <img src="..\seuillage\2009.png\gray_image.png">
+            <img src="..\seuillage\2009.png\Green_and_Black.png">
+            <img src="..\seuillage\2009.png\large_canny.png">
+            <img src="..\seuillage\2009.png\medium_canny.png">
+            <img src="..\seuillage\2009.png\narrow_canny.png">
+            <img src="..\seuillage\2010.png\filled.png">
+            <img src="..\seuillage\2010.png\gray_image.png">
+            <img src="..\seuillage\2010.png\Green_and_Black.png">
+            <img src="..\seuillage\2010.png\large_canny.png">
+            <img src="..\seuillage\2010.png\medium_canny.png">
+            <img src="..\seuillage\2010.png\narrow_canny.png">
+            <img src="..\seuillage\2011.png\filled - Copie.png">
+            <img src="..\seuillage\2011.png\filled.png">
+            <img src="..\seuillage\2011.png\gray_image.png">
+            <img src="..\seuillage\2011.png\Green_and_Black.png">
+            <img src="..\seuillage\2011.png\large_canny.png">
+            <img src="..\seuillage\2011.png\medium_canny.png">
+            <img src="..\seuillage\2011.png\narrow_canny.png">
+            <img src="..\seuillage\2012.png\filled.png">
+            <img src="..\seuillage\2012.png\gray_image.png">
+            <img src="..\seuillage\2012.png\Green_and_Black.png">
+            <img src="..\seuillage\2012.png\large_canny.png">
+            <img src="..\seuillage\2012.png\medium_canny.png">
+            <img src="..\seuillage\2012.png\narrow_canny.png">
+            <img src="..\seuillage\2013.png\filled.png">
+            <img src="..\seuillage\2013.png\gray_image.png">
+            <img src="..\seuillage\2013.png\Green_and_Black.png">
+            <img src="..\seuillage\2013.png\large_canny.png">
+            <img src="..\seuillage\2013.png\medium_canny.png">
+            <img src="..\seuillage\2013.png\narrow_canny.png">
+            <img src="..\seuillage\2014.png\filled.png">
+            <img src="..\seuillage\2014.png\gray_image.png">
+            <img src="..\seuillage\2014.png\Green_and_Black.png">
+            <img src="..\seuillage\2014.png\large_canny.png">
+            <img src="..\seuillage\2014.png\medium_canny.png">
+            <img src="..\seuillage\2014.png\narrow_canny.png">
+            <img src="..\seuillage\2015.png\filled - Copie.png">
+            <img src="..\seuillage\2015.png\filled.png">
+            <img src="..\seuillage\2015.png\gray_image.png">
+            <img src="..\seuillage\2015.png\Green_and_Black.png">
+            <img src="..\seuillage\2015.png\large_canny.png">
+            <img src="..\seuillage\2015.png\medium_canny.png">
+            <img src="..\seuillage\2015.png\narrow_canny.png">
+            <img src="..\seuillage\2016.png\filled.png">
+            <img src="..\seuillage\2016.png\gray_image.png">
+            <img src="..\seuillage\2016.png\Green_and_Black.png">
+            <img src="..\seuillage\2016.png\large_canny.png">
+            <img src="..\seuillage\2016.png\medium_canny.png">
+            <img src="..\seuillage\2016.png\narrow_canny.png">
+            <img src="..\seuillage\2017.png\filled.png">
+            <img src="..\seuillage\2017.png\gray_image.png">
+            <img src="..\seuillage\2017.png\Green_and_Black.png">
+            <img src="..\seuillage\2017.png\large_canny.png">
+            <img src="..\seuillage\2017.png\medium_canny.png">
+            <img src="..\seuillage\2017.png\narrow_canny.png">
+            <img src="..\seuillage\2018.png\filled - Copie.png">
+            <img src="..\seuillage\2018.png\filled.png">
+            <img src="..\seuillage\2018.png\gray_image.png">
+            <img src="..\seuillage\2018.png\Green_and_Black.png">
+            <img src="..\seuillage\2018.png\large_canny.png">
+            <img src="..\seuillage\2018.png\medium_canny.png">
+            <img src="..\seuillage\2018.png\narrow_canny.png">
+            <img src="..\seuillage\2019.png\filled.png">
+            <img src="..\seuillage\2019.png\gray_image.png">
+            <img src="..\seuillage\2019.png\Green_and_Black.png">
+            <img src="..\seuillage\2019.png\large_canny.png">
+            <img src="..\seuillage\2019.png\medium_canny.png">
+            <img src="..\seuillage\2019.png\narrow_canny.png">
+            <img src="..\seuillage\2048 (1).jpg\filled.png">
+            <img src="..\seuillage\2048 (1).jpg\gray_image.png">
+            <img src="..\seuillage\2048 (1).jpg\Green_and_Black.png">
+            <img src="..\seuillage\2048 (1).jpg\large_canny.png">
+            <img src="..\seuillage\2048 (1).jpg\medium_canny.png">
+            <img src="..\seuillage\2048 (1).jpg\narrow_canny.png">
+            <img src="..\seuillage\2048 (2).jpg\filled.png">
+            <img src="..\seuillage\2048 (2).jpg\gray_image.png">
+            <img src="..\seuillage\2048 (2).jpg\Green_and_Black.png">
+            <img src="..\seuillage\2048 (2).jpg\large_canny.png">
+            <img src="..\seuillage\2048 (2).jpg\medium_canny.png">
+            <img src="..\seuillage\2048 (2).jpg\narrow_canny.png">
+            <img src="..\seuillage\2048 (3).jpg\filled.png">
+            <img src="..\seuillage\2048 (3).jpg\gray_image.png">
+            <img src="..\seuillage\2048 (3).jpg\Green_and_Black.png">
+            <img src="..\seuillage\2048 (3).jpg\large_canny.png">
+            <img src="..\seuillage\2048 (3).jpg\medium_canny.png">
+            <img src="..\seuillage\2048 (3).jpg\narrow_canny.png">
+            <img src="..\seuillage\62d6dfeb97661c91708b456f.jpg\filled.png">
+            <img src="..\seuillage\62d6dfeb97661c91708b456f.jpg\gray_image.png">
+            <img src="..\seuillage\62d6dfeb97661c91708b456f.jpg\Green_and_Black.png">
+            <img src="..\seuillage\62d6dfeb97661c91708b456f.jpg\large_canny.png">
+            <img src="..\seuillage\62d6dfeb97661c91708b456f.jpg\medium_canny.png">
+            <img src="..\seuillage\62d6dfeb97661c91708b456f.jpg\narrow_canny.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\filled.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\gray_image.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\gray_image_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\Green_and_Black.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\Green_and_Black_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\large_canny.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\large_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\medium_canny.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\medium_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\narrow_canny.png">
+            <img src="..\seuillage\deforestation_spot_1986.jpg\narrow_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\filled.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\gray_image.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\gray_image_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\Green_and_Black.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\Green_and_Black_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\large_canny.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\large_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\medium_canny.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\medium_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\narrow_canny.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\narrow_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\2005.png\filled.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\2005.png\gray_image.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\2005.png\Green_and_Black.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\2005.png\large_canny.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\2005.png\medium_canny.png">
+            <img src="..\seuillage\deforestation_spot_1998.jpg\2005.png\narrow_canny.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\filled.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\gray_image.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\gray_image_eroded.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\Green_and_Black.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\Green_and_Black_eroded.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\large_canny.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\large_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\medium_canny.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\medium_canny_eroded.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\narrow_canny.png">
+            <img src="..\seuillage\deforestation_spot_2005.jpg\narrow_canny_eroded.png">
+            <img src="..\seuillage\inline_image_preview.jpg\filled.png">
+            <img src="..\seuillage\inline_image_preview.jpg\gray_image.png">
+            <img src="..\seuillage\inline_image_preview.jpg\Green_and_Black.png">
+            <img src="..\seuillage\inline_image_preview.jpg\large_canny.png">
+            <img src="..\seuillage\inline_image_preview.jpg\medium_canny.png">
+            <img src="..\seuillage\inline_image_preview.jpg\narrow_canny.png">
+            <img src="..\seuillage\photographie-aerienne-en-couleur-naturelle-telespazio-france.jpg\filled.png">
+            <img src="..\seuillage\photographie-aerienne-en-couleur-naturelle-telespazio-france.jpg\gray_image.png">
+            <img src="..\seuillage\photographie-aerienne-en-couleur-naturelle-telespazio-france.jpg\Green_and_Black.png">
+            <img src="..\seuillage\photographie-aerienne-en-couleur-naturelle-telespazio-france.jpg\large_canny.png">
+            <img src="..\seuillage\photographie-aerienne-en-couleur-naturelle-telespazio-france.jpg\medium_canny.png">
+            <img src="..\seuillage\photographie-aerienne-en-couleur-naturelle-telespazio-france.jpg\narrow_canny.png">
+            <img src="..\seuillage\phpYHheAY.jpg\filled.png">
+            <img src="..\seuillage\phpYHheAY.jpg\gray_image.png">
+            <img src="..\seuillage\phpYHheAY.jpg\Green_and_Black.png">
+            <img src="..\seuillage\phpYHheAY.jpg\large_canny.png">
+            <img src="..\seuillage\phpYHheAY.jpg\medium_canny.png">
+            <img src="..\seuillage\phpYHheAY.jpg\narrow_canny.png">
+          </ul>
+        
+        </div>
+        
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
